@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.team11.animation_challenge.ChooseCategoryFragment"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252C4A"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/Movies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/movies"
+                android:contentDescription="TODO"
+                android:onClick="@{()->data.movies()}"
+                app:layout_constraintBottom_toTopOf="@+id/history"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/Animals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/animals"
+                android:onClick="@{()->data.animals()}"
+                app:layout_constraintBottom_toTopOf="@+id/Geography"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/history"
+                android:onClick="@{()->data.history()}"
+                app:layout_constraintBottom_toTopOf="@+id/Vehicles"
+                app:layout_constraintEnd_toEndOf="@+id/Movies"
+                app:layout_constraintStart_toStartOf="@+id/Movies"
+                app:layout_constraintTop_toBottomOf="@+id/Movies" />
+
+            <ImageButton
+                android:id="@+id/Geography"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/geography"
+                android:onClick="@{()->data.geography()}"
+                app:layout_constraintBottom_toTopOf="@+id/Arts"
+                app:layout_constraintEnd_toEndOf="@+id/Animals"
+                app:layout_constraintStart_toStartOf="@+id/Animals"
+                app:layout_constraintTop_toBottomOf="@+id/Animals" />
+
+            <ImageButton
+                android:id="@+id/Science_Mathematics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/science_mathematics"
+                android:onClick="@{()->data.scienceMathematics()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Arts"
+                app:layout_constraintStart_toStartOf="@+id/Arts"
+                app:layout_constraintTop_toBottomOf="@+id/Arts" />
+
+            <ImageButton
+                android:id="@+id/General_Knowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/general_knowledge"
+                android:onClick="@{()->data.generalKnowledge()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Vehicles"
+                app:layout_constraintStart_toStartOf="@+id/Vehicles"
+                app:layout_constraintTop_toBottomOf="@+id/Vehicles" />
+
+            <ImageButton
+                android:id="@+id/Arts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/arts"
+                android:onClick="@{()->data.arts()}"
+                app:layout_constraintBottom_toTopOf="@+id/Science_Mathematics"
+                app:layout_constraintEnd_toEndOf="@+id/Geography"
+                app:layout_constraintStart_toStartOf="@+id/Geography"
+                app:layout_constraintTop_toBottomOf="@+id/Geography" />
+
+            <ImageButton
+                android:id="@+id/Vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/vehicles"
+                android:onClick="@{()->data.vehicles()}"
+                app:layout_constraintBottom_toTopOf="@+id/General_Knowledge"
+                app:layout_constraintStart_toStartOf="@+id/history"
+                app:layout_constraintTop_toBottomOf="@+id/history" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Animation Challenge</string>
     <string name="intro">Welcome to Trivia!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="question_num">Question 1/10</string>
+    <string name="trivia_question"> (%1$s)</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="result_Info">You got %1$d out of %2$d!</string>
+    <string name="question_Count">Question %1$d / %2$d</string>
+    <string name="less_than_5">You\'re having a bad day!</string>
+    <string name="five_to_7">Good Job, i bet you can do better!</string>
+    <string name="eight_to_10">Awesome Job!</string>
+    <string name="perfect_score">Perfect, Are you sure you\'re Human!</string>
+
 </resources>
